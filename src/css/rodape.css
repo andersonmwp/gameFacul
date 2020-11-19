@@ -1,0 +1,18 @@
+.rodape {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 1rem 0;
+
+    background-color: #000
+}
+
+.rodape__texto {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+
+    text-align: center;
+
+    color: #fff;
+}
