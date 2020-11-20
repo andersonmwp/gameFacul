@@ -17,7 +17,7 @@ body {
 
     font-family: var(--fonte-texto);
 
-    padding-top: 7rem;
+    padding-top: 6rem;
 }
 
 .container {
@@ -27,17 +27,17 @@ body {
 
 .botao {
     border: 2px solid var(--cor-secundaria);
-    border-radius: 5px;
+    border-radius: 10px;
     box-sizing: border-box;
 
-    background-color: #000;
+    background-color: #4E2574;
     color: var(--cor-secundaria);
 
     cursor: pointer;
     
     display: block;
 
-    padding: 1rem 1rem;
+    padding: 0.75rem 1rem;
 
     width: 80%;
     max-width: 400px;
@@ -48,11 +48,9 @@ body {
 }
 
 .botao:hover {
-    background: var(--cor-secundaria);
+    background: #944BD8;
 
-    color: var(--cor-padrao);
-
-    border-color: #000; 
+    color: #f4f4f4;
 
     text-decoration: none;
 }

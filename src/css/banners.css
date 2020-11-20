@@ -15,12 +15,20 @@
     padding: 2rem 0;
 }
 
+.banners__texto {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 2rem 0;
+
+    max-width: 600px;
+}
+
 @media screen and (min-width: 1024px) {
     .banners__imagem {
         object-fit: initial;
+        width: 100vw;
 
-        max-width: 720px;
-        max-height: 1024px;
+        height: 720px;
     }
         
 }
