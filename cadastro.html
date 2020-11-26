@@ -9,72 +9,28 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Press+Start+2P&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/css/reset.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="src/css/style.css">
-    <link rel="stylesheet" href="src/css/navbar.css">
-    <link rel="stylesheet" href="src/css/loginCadastro.css">
-    <link rel="stylesheet" href="src/css/rodape.css">
+    <link rel="stylesheet" href="src/css/cadastro.css">
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top navegacao cor-background">
-            <div class="container">
-                <a class="navbar-brand" href="index.html"><img src="src/img/logo1.jpg" alt="logo do site"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse " id="navbarNav">
-                    <ul class="navbar-nav font-weight-bold text-uppercase">
-                        <li class="nav-item">
-                        <a class="nav-link" href="#">Jogar</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="login.html">Login/Cadastro</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="ranking.html">Ranking</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="informacoes.html">Informações</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+    <main>
+        <section class="cadastro_form__box">
+            <form class="cadastro_form" action="cadastro.php" method="POST">
 
-    <main class="container">
-        <section class="login">
-            <section>
-                <img class="login_cadastro__logo" src="src/img/logo.jpg" alt="">
+                <h2 class="cadastro_form__titulo">Faça seu cadastro</h2>
 
-                <h1 class="login_cadastro__titulo">Faça seu Cadastro!</h1>
-            </section>
+                <input class="cadastro_form__campo" type="email" name="email" placeholder="Digite seu email" autofocus autocomplete required>
 
-            <fieldset class="login_cadastro__box">
-                <label class="login_cadastro__label" for="usuario">Usuário:</label>
-                <input class="login_cadastro__campo" type="text" name="usuario" placeholder="Digite seu usuário...">
-    
-                <label class="login_cadastro__label" for="senha">Senha:</label>
-                <input class="login_cadastro__campo" type="password" name="senha" placeholder="Digite sua senha...">
+                <input class="cadastro_form__campo" type="text" name="nome" placeholder="Digite seu nome de usuário" required>
 
-                <label class="login_cadastro__label" for="senha">Email:</label>
-                <input class="login_cadastro__campo" type="email" name="senha" placeholder="Digite seu email...">
+                <input class="cadastro_form__campo" type="password" name="senha" placeholder="Digite sua senha" required>
 
-                <div class="login_cadastro__botoes__box">
-                    <input class="login_cadastro__botao botao" type="submit" value="Cadastrar">
-                </div> 
-            </fieldset>
+                <button class="cadastro_form__botao" type="submit">Cadastrar</button>
+            </form>
         </section>  
     </main>
 
-    <footer class="rodape">
-            <p class="rodape__texto">The Legend of The Kinght - 2020 © Todos os direitos reservados</p>
-    </footer>
-  
-      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
   </body>
 
 </html> 
