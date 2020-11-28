@@ -80,3 +80,9 @@ textarea, input, select, button {
     background-color: #716868;
     border-color: #716868;
 }
+
+@media screen and (min-width:1600px) {
+    body {
+        background: url(../img/BG1FHD.jpg);
+    }
+}
