@@ -1,43 +1,68 @@
+body, main, section, html {
+    height: 100%;
+    background-color: #F4F4F4;
+}
+
 .chamada {
-    width: 100vw;
-    height: 550px;
+    height: 100%;
 
-    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
-.chamada__titulo {
-    font-family: var(--fonte-titulo);
+.chamada_imagem {
+    background-image: url(../img/bannerM.jpg);
+}
+
+.chamada_texto__caixa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.chamada_titulo {
     font-size: 2rem;
-
-    font-weight: bold;
-
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
-
-    margin: 4rem 0;
+    padding-top: 5rem;
+    padding-bottom: 4rem;
 }
 
-.chamada__texto {
+.chamada_texto {
     font-size: 1.5rem;
-
+    font-family: 'Roboto', sans-serif;
+    line-height: 2rem;
     padding: 1rem 0;
 }
 
 .chamada__botao {
     font-size: 1.75rem;
-    font-weight: bold;
+    font-weight: 700;
+
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+
+    padding: 1rem 0;
 }
 
-.chamada__box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    padding-bottom: 2rem;
-}
-
-@media screen and (min-width: 1024px) {
-    .chamada {
-        height: 720px;
+@media screen and (min-width:1020px) {
+    .chamada_imagem {
+        background-image: url(../img/bannerHD.jpg);
     }
-        
+    .chamada_titulo{
+        width: 1020px;
+    }
+    .chamada_texto {
+        width: 1020px;
+    }
+}
+
+@media screen and (min-width:1020px) {
+    .chamada_imagem {
+        background-image: url(../img/bannerFHD.jpg);
+    }
 }
