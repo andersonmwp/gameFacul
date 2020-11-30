@@ -28,6 +28,7 @@ body, main, section, html {
     font-weight: 700;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
+
     padding-top: 5rem;
     padding-bottom: 3rem;
 }
@@ -36,6 +37,7 @@ body, main, section, html {
     font-size: 1.5rem;
     font-family: 'Roboto', sans-serif;
     text-align: center;
+
     line-height: 2rem;
     padding: 1rem 0;
 }
@@ -52,7 +54,7 @@ body, main, section, html {
 
 @media screen and (min-width:1020px) {
     .chamada_imagem {
-        background-image: url(../img/bannerHD.jpg);
+        background-image: url(../img/bannerHD.jpg)
     }
     .chamada_titulo{
         width: 1020px;
